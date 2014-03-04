@@ -497,7 +497,7 @@ function goToMonth(mm, yy) {
 function getPrevMonthLink(mm, yy) {
 	var mm1 = mm > 1 ? mm-1 : 12;
 	var yy1 = mm > 1 ? yy : yy-1;
-	return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Back.gif.gif" /></a>'; 
+	return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Back.gif" /></a>'; 
 }
 
 function getNextMonthLink(mm, yy) {
