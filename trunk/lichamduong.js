@@ -497,21 +497,21 @@ function goToMonth(mm, yy) {
 function getPrevMonthLink(mm, yy) {
 	var mm1 = mm > 1 ? mm-1 : 12;
 	var yy1 = mm > 1 ? yy : yy-1;
-	return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="http://nhatroviet.com/Images/Icon/Prev.gif" /></a>'; 
+	return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Prev.gif" /></a>'; 
 }
 
 function getNextMonthLink(mm, yy) {
     var mm1 = mm < 12 ? mm + 1 : 1;
     var yy1 = mm < 12 ? yy : yy + 1;
-    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="http://nhatroviet.com/Images/Icon/Next.gif" /></a>'; 
+    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/next.gif" /></a>'; 
 }
 
 function getPrevYearLink(mm, yy) {
-    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm + ', ' + (yy - 1) + ')"><img width="20" height="15" src="http://nhatroviet.com/Images/Icon/Back.gif" /></a>'; 
+    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm + ', ' + (yy - 1) + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Back.gif" /></a>'; 
 }
 
 function getNextYearLink(mm, yy) {
-    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm + ', ' + (yy + 1) + ')"><img width="20" height="15" src="http://nhatroviet.com/Images/Icon/Forward.gif" /></a>'; 
+    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm + ', ' + (yy + 1) + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Forward.gif" /></a>'; 
 }
 
 function printHead(mm, yy) {
