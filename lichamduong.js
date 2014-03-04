@@ -497,7 +497,7 @@ function goToMonth(mm, yy) {
 function getPrevMonthLink(mm, yy) {
 	var mm1 = mm > 1 ? mm-1 : 12;
 	var yy1 = mm > 1 ? yy : yy-1;
-	return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Prev.gif" /></a>'; 
+	return '<a href="javascript:void(0)" onclick="goToMonth(' + mm1 + ', ' + yy1 + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Back.gif.gif" /></a>'; 
 }
 
 function getNextMonthLink(mm, yy) {
@@ -507,7 +507,7 @@ function getNextMonthLink(mm, yy) {
 }
 
 function getPrevYearLink(mm, yy) {
-    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm + ', ' + (yy - 1) + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Back.gif" /></a>'; 
+    return '<a href="javascript:void(0)" onclick="goToMonth(' + mm + ', ' + (yy - 1) + ')"><img width="20" height="15" src="https://kenhkhamphakienthuc.googlecode.com/svn/trunk/Prev.gif" /></a>'; 
 }
 
 function getNextYearLink(mm, yy) {
@@ -518,12 +518,12 @@ function printHead(mm, yy) {
 	var res = "";
 	var monthName = mm+"/"+yy;
 	//res += ('<tr><td colspan="7" class="tenthang" onClick="showMonthSelect();">'+monthName+'</td></tr>\n');
-	res += ('<tr><td colspan="1" class="navi-l" title="Nam tru?c">' + getPrevYearLink(mm, yy) + '</td>\n');
-	res += ('<td colspan="1" class="navi-l" title="Tháng tru?c">' + getPrevMonthLink(mm, yy) + '</td>\n');
+	res += ('<tr><td colspan="1" class="navi-l" title="Nam truoc">' + getPrevYearLink(mm, yy) + '</td>\n');
+	res += ('<td colspan="1" class="navi-l" title="Thang truoc">' + getPrevMonthLink(mm, yy) + '</td>\n');
 	//res += ('<td colspan="1" class="navig"><a href="'+getPrevMonthLink(mm, yy)+'"><img src="left1.gif" alt="Prev"></a></td>\n');
 	res += ('<td colspan="3" class="tenthang" onClick="showMonthSelect();">'+monthName+'</td>\n');
 	//res += ('<td colspan="1" class="navi-r"><a href="'+getNextMonthLink(mm, yy)+'"><img src="right1.gif" alt="Next"></a></td>\n');
-	res += ('<td colspan="1" class="navi-r" title="Tháng sau">' + getNextMonthLink(mm, yy) + '</td>\n');
+	res += ('<td colspan="1" class="navi-r" title="Thang sau">' + getNextMonthLink(mm, yy) + '</td>\n');
     res += ('<td colspan="1" class="navi-r" title="Nam sau">'+getNextYearLink(mm, yy)+'</td></tr>\n');
 	//res += ('<tr><td colspan="7" class="tenthang"><a href="'+getNextMonthLink(mm, yy)+'"><img src="right.gif" alt="Next"></a></td></tr>\n');
 	res += ('<tr onClick="alertAbout();">\n');
